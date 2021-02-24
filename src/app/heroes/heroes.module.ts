@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HeroesRoutingModule } from './heroes-routing.module';
+
 // Components
 import { AddComponent } from './pages/add/add.component';
 import { HeroComponent } from './pages/hero/hero.component';
@@ -18,7 +20,8 @@ import { SearchComponent } from './pages/search/search.component';
     ListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HeroesRoutingModule
   ]
 })
 export class HeroesModule { }
