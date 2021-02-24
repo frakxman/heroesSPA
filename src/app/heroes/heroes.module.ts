@@ -11,6 +11,8 @@ import { HeroComponent } from './pages/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { SearchComponent } from './pages/search/search.component';
+import { CardComponent } from './components/card/card.component';
+import { ImagePipe } from './pipes/image.pipe';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { SearchComponent } from './pages/search/search.component';
     SearchComponent,
     HeroComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    CardComponent,
+    ImagePipe
   ],
   imports: [
     CommonModule,
