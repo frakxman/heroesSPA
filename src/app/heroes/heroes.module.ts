@@ -16,6 +16,7 @@ import { CardComponent } from './components/card/card.component';
 
 
 import { ImagePipe } from './pipes/image.pipe';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ImagePipe } from './pipes/image.pipe';
     HomeComponent,
     ListComponent,
     CardComponent,
-    ImagePipe
+    ImagePipe,
+    DialogComponent
   ],
   imports: [
     CommonModule,
