@@ -24,4 +24,16 @@ export class HeroesService {
   getSuggestions( term: string ): Observable<Heroe[]> {
     return this.http.get<Heroe[]>(`${ this.urlBase }/heroes?q=${ term }&_limit=5`);
   }
+
+  addHeroe( heroe: Heroe ): Observable<Heroe> {
+    return this.http.post<Heroe>(`${ this.urlBase }/heroes`, heroe );
+  }
+
+  updateHeroe( heroe: Heroe ): Observable<Heroe> {
+    return this.http.put<Heroe>(`${ this.urlBase }/heroes/${ heroe.id }`, heroe );
+  }
+
+  deleteHeroe( id: string ): Observable<any> {
+    return this.http.delete<any>(`${ this.urlBase }/heroes/${ id }`);
+  }
 }
